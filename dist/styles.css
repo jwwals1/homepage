@@ -1,0 +1,20 @@
+body {
+    background-color: gray;
+}
+
+#main-container {
+    background-color: white;
+    margin: 100px;
+}
+
+#intro-container {
+    display: grid;
+    /* grid-column: 1fr 1fr 1fr 1fr; */
+}
+
+.my-projects {
+    border: solid;
+    width: 300px;
+    border-radius: 20px;
+    padding: 10px;
+}
