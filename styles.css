@@ -1,5 +1,6 @@
 body {
     background-color: white;
+    position: relative;
 }
 
 #main-container {
@@ -30,7 +31,7 @@ body {
 }
 
 #intro-container {
-    position: absolute;
+    position: relative;
     display: flex;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /* background-color: lightblue;
@@ -113,18 +114,13 @@ body {
 }
 
 #projects-container {
-    /* margin-top: 700px; */
-    position: absolute;
-    top: 700px;
+    margin-top: 300px;
     display: grid;
     /* background-color: white; */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 20px;
-    /* width: 300px;
-    border-radius: 20px;
-    padding: 10px; */
 } 
 
 .my-projects {
@@ -170,14 +166,15 @@ body {
 
 #contact-container {
  background-color: blue;
- position: absolute;
- top:2000px;
- width: 100%;
+ /* position: absolute; */
+ /* top:2000px; */
+ /* width: 100%; */
  color: white;
+ margin: 100px;
  /* margin-top: 50px; */
 }
 
-#contact-container, #contact-me {
+#contact-me {
     padding-left: 10px;
 }
 
