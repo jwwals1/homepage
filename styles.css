@@ -169,5 +169,32 @@ body {
 }
 
 #contact-container {
- background-color: lightblue;
+ background-color: blue;
+ position: absolute;
+ top:2000px;
+ width: 100%;
+ color: white;
+ /* margin-top: 50px; */
+}
+
+#contact-container, #contact-me {
+    padding-left: 10px;
+}
+
+#phone, #email, #contact-github  {
+    display: flex;
+    padding-left: 10px;
+}
+
+#phone-text, #email-text, #contact-github {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#phone-icon, #email-icon, #my-github {
+    margin-right: 10px;
+    filter: brightness(0) invert(1);
+}
+
+#contact-me{
+    font-size: 30px;
 }
