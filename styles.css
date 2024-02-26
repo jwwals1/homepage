@@ -2,6 +2,7 @@ body {
     background-color: white;
     position: relative;
     background: linear-gradient(109.6deg, rgb(61, 237, 253) 44.2%, rgb(3, 136, 238) 95.6%);
+    margin: 0px;
 }
 
 #main-container {
@@ -23,15 +24,6 @@ body {
     margin-top: 5%;
 }
 
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 #intro-container {
     position: relative;
     display: flex;
@@ -45,17 +37,6 @@ body {
     animation: fade-in-left 2s ease-in-out;
 }
 
-@keyframes fade-in-left {
-    0% {
-        opacity: 0;
-        transform: translateX(-400px);
-        filter: blur(5px);
-    }
-    100% {
-        transform: translateX(0px);
-    }
-}
-
 #intro-description{
     margin-top: 40px;
     border: solid;
@@ -64,17 +45,6 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     animation: fade-in-right 2s ease-in-out;
-}
-
-@keyframes fade-in-right {
-    0% {
-        opacity: 0;
-        transform: translateX(400px);
-        filter: blur(5px);
-    }
-    100% {
-        transform: translateX(0px);
-    }
 }
 
 #intro-photo {
@@ -126,8 +96,6 @@ body {
     border: solid;
     border-radius: 20px;
     box-shadow: 5px 2.5px 2.5px black;
-    /* transition: transform 0.5s;
-    transform-style: preserve-3d; */
 }
 
 .my-projects:hover {
@@ -211,4 +179,70 @@ body {
 
 #contact-me{
     font-size: 30px;
+}
+
+@keyframes fade-in-right {
+    0% {
+        opacity: 0;
+        transform: translateX(400px);
+        filter: blur(5px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fade-in-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-400px);
+        filter: blur(5px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    #main-container {
+        margin: 20px;
+    }
+    #intro-description {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #main-container {
+        margin: 0px;
+    }
+    #intro-container {
+        display: grid;
+        justify-items: center;
+    }
+    #contact-content {
+        display: grid;
+    }
+    #top-background {
+        background-color: white;
+    }
+    #intro-description {
+        width: 75%;
+    } 
+    #projects-container {
+        margin-top: 100px;
+    }
+    /* #intro-description {
+        width: 55%;
+    } */
 }
