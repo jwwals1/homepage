@@ -126,11 +126,17 @@ body {
     border: solid;
     border-radius: 20px;
     box-shadow: 5px 2.5px 2.5px black;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
 }
 
 .my-projects:hover {
     scale: 1.025;
 }
+
+/* .my-projects:hover {
+    transform: rotateY(360deg);
+} */
 
 .project-screenshots {
     border-radius: 15px 15px 0 0;
@@ -169,6 +175,12 @@ body {
     border-radius: 60px 0px 60px 0px;
     margin-left: 5%;
     margin-right: 5%;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+}
+
+#contact-container:hover {
+    transform: rotateY(360deg);
 }
 
 #contact-content {
