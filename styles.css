@@ -3,25 +3,28 @@ body {
     position: relative;
     /* background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,154,0,1) 10%, rgba(208,222,33,1) 20%, rgba(79,220,74,1) 30%, rgba(63,218,216,1) 40%, rgba(47,201,226,1) 50%, rgba(28,127,238,1) 60%, rgba(95,21,242,1) 70%, rgba(186,12,248,1) 80%, rgba(251,7,217,1) 90%, rgba(255,0,0,1) 100%) */
     /* background: linear-gradient(to top, #09203f 0%, #537895 100%); */
-    background-color: blue;
+    background: linear-gradient(109.6deg, rgb(61, 237, 253) 44.2%, rgb(3, 136, 238) 95.6%);
 }
 
 #main-container {
     background-color: white;
-    margin: 100px;
+    margin: 50px;
     padding: 0px;
     position: relative;
 }
 
 #top-background {
+    display: flex;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    /* top: 0; */
+    /* left: 0; */
+    width: 90%;
     height: 600px;
     background-color: lightblue;
     clip-path: polygon(0 0, 100% 0%,100% 60%, 0% 100%);
     animation: fade-in 2s ease-in-out;
+    margin-left: 5%;
+    margin-top: 5%;
 }
 
 @keyframes fade-in {
@@ -37,11 +40,8 @@ body {
     position: relative;
     display: flex;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* background-color: lightblue;
-    clip-path: polygon(0 0, 100% 0%,100% 60%, 0% 100%); */
-    /* background: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgba(255,255,255,0.8) 0%, rgba(255, 255,255,1) 70%); */
     justify-content: center;
+    padding-top: 5%;
 }
 
 
@@ -120,10 +120,11 @@ body {
 #projects-container {
     margin-top: 300px;
     display: grid;
-    /* background-color: white; */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 5%;
+    padding-right: 5%;
 } 
 
 .my-projects {
@@ -168,17 +169,28 @@ body {
 }
 
 #contact-container {
-    /* background-color: blue; */
+    /* display: flex; */
     background: linear-gradient(to top, #09203f 0%, #537895 100%);
-    width: 100%;
+    width: 90%;
     color: white;
     margin-top: 100px;
     border-radius: 60px 0px 60px 0px;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* margin-bottom: 40%; */
+    /* margin-bottom: 20%; */
+}
+
+#contact-content {
+    display: flex;
+    justify-content: center;
 }
 
 #contact-me {
-    padding-left: 20px;
+    display: flex;
+    justify-content: center;
     padding-top: 20px;
+    margin: 0px;
 }
 
 #phone, #email, #contact-github  {
